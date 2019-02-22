@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/embedtls_sha256/main.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+mbedtls/sha256.h
+/home/embedtls_sha256/mbedtls/sha256.h
+mbedtls/chacha20.h
+/home/embedtls_sha256/mbedtls/chacha20.h
+mbedtls/ecdsa.h
+/home/embedtls_sha256/mbedtls/ecdsa.h
+mbedtls/ecp.h
+/home/embedtls_sha256/mbedtls/ecp.h
+mbedtls/pk.h
+/home/embedtls_sha256/mbedtls/pk.h
+mbedtls/ctr_drbg.h
+/home/embedtls_sha256/mbedtls/ctr_drbg.h
+mbedtls/entropy.h
+/home/embedtls_sha256/mbedtls/entropy.h
+
