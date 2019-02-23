@@ -209,7 +209,7 @@ int main() {
     memset(buf, 0x2A, sizeof(buf));
     strcpy((char *)buf, "hello world"); //just fill with something other than 0x2A
     mbedtls_ecdsa_init(&mbedtlsEcdsaContext);
-    mbedtls_ecdsa_from_keypair(&mbedtlsEcdsaContext, mbedtls_pk_ec(mbedtlsPkContext));
+    mbedtls_ecdsa_from_keypair(&mbedtlsEcdsaContext, mbedtls_pk_ec(pk));
 
     int ret_write_sign = mbedtls_ecdsa_write_signature(&mbedtlsEcdsaContext, MBEDTLS_MD_SHA256, buf, curve_info->bit_size, tmp, &sig_len, myrand, NULL);
     ecp_clear_precomputed( &mbedtlsEcdsaContext.grp );
